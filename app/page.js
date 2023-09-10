@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import Layout from "./components/Layout";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Home
+    <main className="flex items-center text-dark w-full min-h-screen">
+      <Layout>
+        <h1>Home</h1>
+      </Layout>
     </main>
   )
 }
