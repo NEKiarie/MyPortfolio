@@ -4,6 +4,7 @@ import ProfilePic from "../public/images/Profile.jpg";
 import AnimatedText from "./components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "./components/Icons";
+import HireMe from "./components/HireMe";
 
 export default function Home() {
   return (
@@ -16,8 +17,8 @@ export default function Home() {
           <div className="w-1/2 flex flex-col items-center self-center ">
             <AnimatedText text="Turning Vision Into Reality With Code And Design." />
             <p className="mt-4 text-base font-medium ">
-              As a full-stack developer, I am dedicated to turning ideas into
-              innovative web applications.Explore my latest projects showcasing
+              As a Software developer, I am dedicated to turning ideas into
+              innovative web applications. Explore my latest projects showcasing
               my expertise in React.js, Next.Js, Typescript & Tailwind.
             </p>
             <div className=" flex items-center self-start mt-2">
@@ -39,6 +40,8 @@ export default function Home() {
           </div>
         </div>
       </Layout>
+
+      <HireMe />
     </main>
   );
 }
