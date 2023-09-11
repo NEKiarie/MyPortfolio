@@ -5,6 +5,7 @@ import Logo from "./Logo";
 import { useRouter } from "next/navigation";
 import { TwitterIcon, GithubIcon, LinkedInIcon } from "./Icons";
 import { motion } from "framer-motion";
+import about from "./About";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter;
