@@ -5,7 +5,7 @@ import { Montserrat} from "next/font/google";
 
 
 export const metadata = {
-  title: "Elvis Njiiri",
+  title: "EN  || Software Developer",
   description: "A full-Stack Software Developer",
 };
 

@@ -1,19 +1,20 @@
-"use client"
+"use client";
 
-import React from 'react'
-import Layout from './Layout'
-import Link from 'next/link'
+import React from "react";
+import Layout from "./Layout";
+import Link from "next/link";
 
 function Footer() {
   return (
-  <footer className='w-full border-t-1 border-none
-  font-medium text-md '>
-    <Layout className='py-8 flex items-center justify-center'>
+    <footer
+      className="w-full border-t-1 border-none
+  font-medium text-md "
+    >
+      <Layout className="py-8 flex items-center justify-center">
         <span>{new Date().getFullYear()}&copy; All rights reserved</span>
-
-    </Layout>
-  </footer>
-  )
+      </Layout>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

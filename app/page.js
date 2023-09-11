@@ -27,17 +27,17 @@ export default function Home() {
                 href="/MyResume.pdf"
                 download={true}
                 target={"_blank"}
-                className="flex items-center bg-dark2 text-light p-2.5 px-6 rounded-md text-md
+                className="flex items-center bg-dark2 text-light p-2.5 px-6 rounded-md text-sm
                 font-semibold hover:bg-dark hover:text-white
-                border-1 border-solid border-transparent hover: border-dark"
+                border-1 border-solid border-transparent hover: border-dark mt-5"
               >
-                Download Resume
+                Download Resume 
               </Link>
               <Link
                 href="mailto:ekiarienjiiri88@gmail.com"
                 target={"_blank"}
-                className="ml-4 text-md font-medium
-              capitalize text-dark underline"
+                className="ml-4 text-sm font-medium
+              capitalize text-dark underline mt-5"
               >
                 Contact
               </Link>
