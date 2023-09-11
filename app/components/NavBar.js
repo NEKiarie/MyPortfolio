@@ -34,7 +34,7 @@ function NavBar() {
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
-          href="https://linkedin.com"
+          href="https://twitter.com/NjiiriEk"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -43,7 +43,7 @@ function NavBar() {
           <TwitterIcon />
         </motion.a>
         <motion.a
-          href="https://github.com"
+          href="https://linkedin.com/in/elvis-njiiri"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
@@ -52,7 +52,7 @@ function NavBar() {
           <LinkedInIcon />
         </motion.a>
         < motion.a
-          href="https://twitter.com"
+          href="https://github.com/NEKiarie"
           target={"_blank"}
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
