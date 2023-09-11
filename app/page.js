@@ -5,6 +5,7 @@ import AnimatedText from "./components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "./components/Icons";
 import HireMe from "./components/HireMe";
+import LightBulb from "../public/images/miscellaneous_icons_1.svg"
 
 export default function Home() {
   return (
@@ -30,18 +31,24 @@ export default function Home() {
                 font-semibold hover:bg-dark hover:text-white
                 border-1 border-solid border-transparent hover: border-dark"
               >
-                Download Resume
+                Download Resume  <LinkArrow className={"w-5"} />
               </Link>
-              <Link href="mailto:ekiarienjiiri88@gmail.com" target={"_blank"} className="ml-4 text-md font-medium
-              capitalize text-dark underline">
+              <Link
+                href="mailto:ekiarienjiiri88@gmail.com"
+                target={"_blank"}
+                className="ml-4 text-md font-medium
+              capitalize text-dark underline"
+              >
                 Contact
               </Link>
             </div>
           </div>
         </div>
       </Layout>
-
       <HireMe />
+      <div className="absolute right-8 top-5 inline-block w-6">
+        <Image src={LightBulb} alt="EN" className="w-full h-auto" />
+      </div>
     </main>
   );
 }
