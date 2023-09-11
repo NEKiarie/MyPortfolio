@@ -1,6 +1,6 @@
 import NavBar from "./components/NavBar";
 import "./globals.css";
-import { Nunito} from "next/font/google";
+import { Montserrat} from "next/font/google";
 
 
 export const metadata = {
@@ -8,7 +8,7 @@ export const metadata = {
   description: "A full-Stack Software Developer",
 };
 
-const font = Nunito({
+const font = Montserrat({
   subsets: ["latin"],
 });
 
