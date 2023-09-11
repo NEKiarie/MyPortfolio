@@ -2,7 +2,7 @@ import Layout from "./components/Layout";
 import Image from "next/image";
 import ProfilePic from "../public/images/Profile.jpg";
 import AnimatedText from "./components/AnimatedText";
-import Link from "next/link";
+import Link from "next/link"
 import HireMe from "./components/HireMe";
 import LightBulb from "../public/images/miscellaneous_icons_1.svg";
 
@@ -16,12 +16,11 @@ export default function Home() {
           </div>
           <div className="w-1/2 flex flex-col items-center self-center ">
             <AnimatedText text="Turning Vision Into Reality With Code And Design." />
-            <AnimatedText
-              className="mt-4 text-base font-medium"
-              text="As a Software developer, I am dedicated to turning ideas into
+            <p className="mt-4 text-base font-medium ">
+              As a Software developer, I am dedicated to turning ideas into
               innovative web applications. Explore my latest projects showcasing
-              my expertise in React.js, Next.Js, Typescript & Tailwind."
-            />
+              my expertise in React.js, Next.Js, Typescript & Tailwind.
+            </p>
             <div className=" flex items-center self-start mt-2">
               <Link
                 href="/MyResume.pdf"
@@ -31,7 +30,7 @@ export default function Home() {
                 font-semibold hover:bg-dark hover:text-white
                 border-1 border-solid border-transparent hover: border-dark mt-5"
               >
-                Download Resume
+                Download Resume 
               </Link>
               <Link
                 href="mailto:ekiarienjiiri88@gmail.com"
