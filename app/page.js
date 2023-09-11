@@ -31,7 +31,7 @@ export default function Home() {
                 font-semibold hover:bg-dark hover:text-white
                 border-1 border-solid border-transparent hover: border-dark"
               >
-                Download Resume <LinkArrow />
+                Download Resume
               </Link>
               <Link
                 href="mailto:ekiarienjiiri88@gmail.com"
