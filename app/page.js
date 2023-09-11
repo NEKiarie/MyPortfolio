@@ -5,7 +5,7 @@ import AnimatedText from "./components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "./components/Icons";
 import HireMe from "./components/HireMe";
-import LightBulb from "../public/images/miscellaneous_icons_1.svg"
+import LightBulb from "../public/images/miscellaneous_icons_1.svg";
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
                 font-semibold hover:bg-dark hover:text-white
                 border-1 border-solid border-transparent hover: border-dark"
               >
-                Download Resume  <LinkArrow className={"w-5 h-5"} />
+                Download Resume <LinkArrow />
               </Link>
               <Link
                 href="mailto:ekiarienjiiri88@gmail.com"
