@@ -15,7 +15,7 @@ function Logo() {
         items-center
         justify-center 
         rounded-full
-       text-2xl font-bold"
+        text-2xl font-bold"
         whileHover={{ backgroundColor: "black" }}
         transition={{ duration: 1, repeat: Infinity }}
       >

@@ -92,7 +92,6 @@ function about() {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  {" "}
                   <AnimatedNumbers value={15} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark2/75">

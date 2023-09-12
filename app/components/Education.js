@@ -46,35 +46,35 @@ function Education() {
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            type={"Bachelor Of Science In Computer Science"}
-            time={"2016-2020 "}
-            place={"Massachusetts Institute Of Technology (MIT)"}
+            type={"Cisco Certified Support Technician(CCST)"}
+            time={"2023"}
+            place={"Cisco Networking Academy"}
+            info={
+              "Relevant topics included Introduction to Cybersecurity,Network Basics, Network Device and Initial Configuration, Endpoint Security, Network Defense, and Cyber Threat Management"
+            }
+          />
+          <Details
+            type={"Software Engineering"}
+            time={"2022-2023 "}
+            place={"Moringa School"}
+            info={
+              "Relevant hands-on experience through various activities and societies such as pair programming, daily stand-up, self-directed learning, and project-based learning. Skills in front-end development, including HTML, CSS, JavaScript, ReactJs, NextJs, TypeScript, and Tailwind Css. I also gained expertise in backend development through studying Ruby on Rails, Object Relational Mapping, and SQL. Additionally, I learned to use various tools, including Git version control, GitHub, and Heroku. "
+            }
+          />
+          <Details
+            type={"Security Intelligence Analysis"}
+            time={"2017"}
+            place={"IBM"}
             info={
               "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
             }
           />
-           <Details
-            type={"Bachelor Of Science In Computer Science"}
-            time={"2016-2020 "}
-            place={"Massachusetts Institute Of Technology (MIT)"}
+          <Details
+            type={"Diploma in Information Technology"}
+            time={"2016-2019 "}
+            place={"Jomo Kenyatta University of Science & Technology"}
             info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-            }
-          />
-           <Details
-            type={"Bachelor Of Science In Computer Science"}
-            time={"2016-2020 "}
-            place={"Massachusetts Institute Of Technology (MIT)"}
-            info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
-            }
-          />
-           <Details
-            type={"Bachelor Of Science In Computer Science"}
-            time={"2016-2020 "}
-            place={"Massachusetts Institute Of Technology (MIT)"}
-            info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+              "Relevant activities included engaged in various activities and societies that honed my skills in pair programming, project-based learning, and collaborative problem solving.Through the coursework and projects, I acquired a diverse range of skills, including the C programming language, project management, and Android development. I also gained knowledge in web development with HTML and Cascading Style Sheets (CSS)."
             }
           />
         </ul>

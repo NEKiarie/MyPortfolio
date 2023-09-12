@@ -41,6 +41,8 @@ function Skills() {
         <Skill name="Github" x="-25vw" y="14vw" />
         <Skill name="Tailwind Css" x="18vw" y="18vw" />
         <Skill name="NodeJs" x="-32vw" y="-3vw" />
+        <Skill name="Android" x="-32vw" y="-3vw" />
+        <Skill name="SQL" x="-2vw" y="22vw" />
       </div>
     </>
   );

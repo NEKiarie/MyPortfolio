@@ -13,10 +13,8 @@ const CustomLink = ({ href, title, className = "" }) => {
       {title}
       <span
         className={`h-[2px] inline-block bg-dark2 absolute left-0 -bottom-0.5 
-             group-hover:w-full transition-[width] ease duration-300 ${
-               router.asPath === href ? "w-full" : "w-0"
-             }
-     `}
+             group-hover:w-full transition-[width] ease duration-300 
+             ${router.asPath === href ? "w-full" : "w-0"}`}
       >
         &nbsp;
       </span>
@@ -27,7 +25,7 @@ const CustomLink = ({ href, title, className = "" }) => {
 function NavBar() {
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
-      <nav>
+      <nav className="text-lg">
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="ml-4" />
@@ -51,7 +49,7 @@ function NavBar() {
         >
           <LinkedInIcon />
         </motion.a>
-        < motion.a
+        <motion.a
           href="https://github.com/NEKiarie"
           target={"_blank"}
           whileHover={{ y: -2 }}

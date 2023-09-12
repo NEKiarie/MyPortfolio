@@ -5,6 +5,7 @@ import AnimatedText from "./components/AnimatedText";
 import Link from "next/link"
 import HireMe from "./components/HireMe";
 import LightBulb from "../public/images/miscellaneous_icons_1.svg";
+import { LinkArrow } from "./components/Icons";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
               <Link
                 href="mailto:ekiarienjiiri88@gmail.com"
                 target={"_blank"}
-                className="ml-4 text-sm font-medium
+                className="ml-4 text-lg font-medium
               capitalize text-dark underline mt-5"
               >
                 Contact
