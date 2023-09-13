@@ -17,13 +17,13 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl text-dark2">
+        <h3 className="capitalize font-bold text-2xl text-dark2 dark:text-light/75">
           {position}&nbsp;
-          <a href={companyLink} target="_blank" className="text-primary">
+          <a href={companyLink} target="_blank" className="text-primary dark:text-primaryDark">
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>
@@ -43,8 +43,8 @@ const Details2 = ({ position, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl text-dark2">{position}</h3>
-        <span className="capitalize font-medium text-dark/75">
+        <h3 className="capitalize font-bold text-2xl text-dark2 dark:text-light/75">{position}</h3>
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>
@@ -69,7 +69,7 @@ function Experience() {
         <motion.div
           style={{ scaleY: scrollYProgress }}
           ref={ref}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark2 origin-top"
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark2 origin-top dark:bg-light"
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
