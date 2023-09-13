@@ -7,6 +7,7 @@ import HireMe from "./components/HireMe";
 import LightBulb from "../public/images/miscellaneous_icons_1.svg";
 import { LinkArrow } from "./components/Icons";
 
+
 export default function Home() {
   return (
     <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
@@ -24,16 +25,16 @@ export default function Home() {
             </p>
             <div className=" flex items-center self-start mt-2">
               <Link
-                href=""
+                href="/MyResume.pdf"
                 download={true}
                 target={"_blank"}
-                className="flex items-center bg-dark2 text-light p-2.5 px-4 rounded-md text-sm
+                className="flex items-center bg-dark2 text-light p-1.5 px-8 rounded-lg text-sm
                 font-semibold  hover:bg-light hover:text-dark hover:border-dark2
-                border border-solid border-transparent hover: border-dark mt-5 dark:hover:text-dark
+                border border-solid border-transparent hover: border-dark2 mt-5 dark:hover:text-dark
                 hover:dark:border-light hover:dark:bg-light
                 "
               >
-                View Resume <LinkArrow />
+                Resume <LinkArrow />
               </Link>
               <Link
                 href="mailto:ekiarienjiiri88@gmail.com"
