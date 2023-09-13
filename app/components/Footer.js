@@ -13,7 +13,7 @@ function Footer() {
     >
       <Layout className="py-8 flex flex-col items-center justify-center">
         <Logo />
-        <span className="mt-4">{new Date().getFullYear()}&copy; All rights reserved</span>
+        <span className="mt-4 dark:text-light">{new Date().getFullYear()}&copy; All rights reserved</span>
       </Layout>
     </footer>
   );

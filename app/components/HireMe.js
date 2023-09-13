@@ -4,9 +4,9 @@ import Link from "next/link";
 
 function HireMe() {
   return (
-    <div className="fixed left-4 bottom-4 flex items-center justify-center overflow-hidden">
+    <div className="fixed left-0 bottom-4 flex items-center justify-center overflow-hidden">
       <div className="w-40 h-auto flex items-center justify-center relative ">
-        <CircularText className={"fill-dark2 animate-spin-slow"} />
+        <CircularText className={"fill-dark2 animate-spin-slow dark:fill-light"} />
         <Link
           href={"mailto:ekiarienjiiri88@gmail.com"}
           className="flex items-center justify-center

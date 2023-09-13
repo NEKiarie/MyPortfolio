@@ -66,7 +66,7 @@ function Education() {
             time={"2017"}
             place={"IBM"}
             info={
-              "Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+              "Relevant courses included network defensive tactics, data protection risks, a variety of application security vulnerabilities, and virtual and physical threat."
             }
           />
           <Details

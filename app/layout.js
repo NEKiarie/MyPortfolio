@@ -16,7 +16,7 @@ const font = Montserrat({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${font.className} bg-light w-full min-h-screen`}>
+      <body className={`${font.className} dark:bg-dark bg-light w-full min-h-screen`}>
         <NavBar />
         {children}
         <Footer />

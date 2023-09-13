@@ -16,7 +16,7 @@ const AnimatedNumbers = ({ value }) => {
 
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInview = useInView(ref, {once: true});
+  const isInview = useInView(ref, { once: true });
 
   useEffect(() => {
     if (isInview) {
@@ -42,12 +42,12 @@ function about() {
         <title>Elvis Njiiri | About Page</title>
         <meta name="description" content="description" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mt-4 text-sm font-bold uppercase text-dark/75">
+              <h2 className="mt-4 text-sm font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
               <p className="font-sm">
@@ -70,23 +70,25 @@ function about() {
                 opportunity to bring my skills and passion to your next project.
               </p>
             </div>
+
             <div
               className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark2
-            bg-light p-8 "
-            >
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark2" />
+             bg-light p-8 dark:bg-dark dark:border-light"
+             >
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark2 dark:bg-light" />
               <Image
                 src={ProfilePic}
                 alt="EN"
                 className="w-full h-auto rounded-2xl"
               />
             </div>
+
             <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={5} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark2/75">
+                <h2 className="text-xl font-medium capitalize text-dark2/75 dark:text-light/75">
                   Satisfied Clients
                 </h2>
               </div>
@@ -94,7 +96,7 @@ function about() {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={15} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark2/75">
+                <h2 className="text-xl font-medium capitalize text-dark2/75 dark:text-light/75">
                   Projects Completed
                 </h2>
               </div>
@@ -103,7 +105,7 @@ function about() {
                   {" "}
                   <AnimatedNumbers value={2} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark2/75">
+                <h2 className="text-xl font-medium capitalize text-dark2/75 dark:text-light/75">
                   Years of Experience
                 </h2>
               </div>
