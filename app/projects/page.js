@@ -10,6 +10,9 @@ import { GithubIcon } from "../components/Icons";
 import FeaturedProject1 from "../../public/images/Portfolio.png";
 import Project1 from "../../public/images/Steer X.png";
 import Project2 from "../../public/images/Airbnb.png";
+import { motion } from "framer-motion";
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -17,14 +20,20 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
       className="w-full flex items-center justify-between rounded-3xl
     border border-solid border-dark2 bg-light shadow-2xl p-12 relative rounded-br-2xl"
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark2 rounded-br-3xl"  />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark2 rounded-br-3xl" />
       <Link
         href={link}
         target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg
       "
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
 
       <div className="w-1/2 flex flex-col items-start justify-between pl-6 ">
@@ -55,18 +64,26 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github}) => {
-  return(
-   <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
-   border-dark2 bg-light p-6 relative rounded-br-2xl ">
-    <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark2 rounded-br-3xl"  />
-    <Link
+const Project = ({ title, type, img, link, github }) => {
+  return (
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid
+   border-dark2 bg-light p-6 relative rounded-br-2xl "
+    >
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark2 rounded-br-3xl" />
+      <Link
         href={link}
         target="_blank"
         className="w-full cursor-pointer overflow-hidden rounded-lg
       "
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between mt-4">
@@ -79,7 +96,7 @@ const Project = ({ title, type, img, link, github}) => {
           <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
         </Link>
         <div className=" w-full mt-2 flex items-center justify-between">
-        <Link
+          <Link
             href={link}
             target="_blank"
             className="text-lg font-semibold underline text-dark2"
@@ -89,13 +106,11 @@ const Project = ({ title, type, img, link, github}) => {
           <Link href={github} target="_blank" className="w-8">
             <GithubIcon />
           </Link>
-
-        
         </div>
       </div>
-   </article>
-  )
-}
+    </article>
+  );
+};
 
 function page() {
   return (
@@ -119,26 +134,31 @@ function page() {
                 summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
                 page transitions, cool background effects, unique design and it is mobile responsive.
                 ."
-                link="/"
-                github="/"
+                link="https://my-portfolio-nekiarie.vercel.app"
+                github="https://github.com/NEKiarie/MyPortfolio"
                 type="Featured Project"
               />
             </div>
 
-            <div className="col-span-6"> <Project
+            <div className="col-span-6">
+              {" "}
+              <Project
                 title="Steer X"
                 img={Project1}
-                link="/"
-                github="/"
+                link="https://steer-x.vercel.app"
+                github="https://github.com/NEKiarie/Steer-X"
                 type="Featured Project"
-              /></div>
-            <div className="col-span-6"><Project
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
                 title="Full-Stack Airbnb Clone"
                 img={Project2}
-                link="/"
-                github="/"
+                link="https://full-stack-airbnb-clone-seven.vercel.app"
+                github="https://github.com/NEKiarie/Full-Stack-Airbnb-Clone"
                 type="Featured Project"
-              /></div>
+              />
+            </div>
           </div>
         </Layout>
       </main>
