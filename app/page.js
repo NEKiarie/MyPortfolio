@@ -24,7 +24,7 @@ export default function Home() {
             </p>
             <div className=" flex items-center self-start mt-2">
               <Link
-                href="/MyResume.pdf"
+                href="https://docs.google.com/document/d/1Z6QIMkDrlTFerzt4UEXYsOhrTcmAdN-1FeackNZ07Xo/edit?usp=sharing"
                 download={true}
                 target={"_blank"}
                 className="flex items-center bg-dark2 text-light p-2.5 px-4 rounded-md text-sm
