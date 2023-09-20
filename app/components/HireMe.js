@@ -5,7 +5,7 @@ import Link from "next/link";
 function HireMe() {
   return (
     <div className="fixed left-0 bottom-4 flex items-center justify-center overflow-hidden 
-    md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute">
+    md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute sm:right-0">
       <div className="w-40 h-auto flex items-center justify-center relative md:w-24 ">
         <CircularText className={"fill-dark2 animate-spin-slow dark:fill-light"} />
         <Link
