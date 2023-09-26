@@ -43,7 +43,7 @@ function about() {
         <title>Elvis Njiiri | About Page</title>
         <meta name="description" content="description" />
       </Head>
-      <TransitionEffect />
+      {/* <TransitionEffect /> */}
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
