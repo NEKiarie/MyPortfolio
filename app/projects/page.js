@@ -200,7 +200,7 @@ function page() {
               />
             </div>
 
-            <div className="col-span-12 ">
+            {/* <div className="col-span-12 ">
               <FeaturedProject
                 title="Real-Time Messenger Clone"
                 img={FeaturedProject2}
@@ -209,7 +209,7 @@ function page() {
                 github="https://github.com/NEKiarie/Real-Time-Messenger-Clone"
                 type="Featured Project"
               />
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>
