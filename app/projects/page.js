@@ -8,8 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "../components/Icons";
 import FeaturedProject1 from "../../public/images/Portfolio.png";
-import FeaturedProject2 from "../../public/images/logo.png";
-import Project1 from "../../public/images/Steer X.png";
+import Project1 from "../../public/images/logo.png";
 import Project2 from "../../public/images/Airbnb.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "../components/TransitionEffect";
@@ -183,10 +182,10 @@ function page() {
 
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="Steer X"
+                title="Real-Time Messenger Clone"
                 img={Project1}
-                link="https://steer-x.vercel.app"
-                github="https://github.com/NEKiarie/Steer-X"
+                link="https://real-time-messenger-clone-beta.vercel.app/"
+                github="https://github.com/NEKiarie/Real-Time-Messenger-Clone"
                 type="Featured Project"
               />
             </div>
