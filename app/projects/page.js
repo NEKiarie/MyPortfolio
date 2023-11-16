@@ -7,9 +7,11 @@ import AnimatedText from "../components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "../components/Icons";
-import FeaturedProject1 from "../../public/images/Portfolio.png";
-import Project1 from "../../public/images/logo.png";
-import Project2 from "../../public/images/Airbnb.png";
+import FeaturedProject1 from "../../public/images/logo.png";
+import Project1 from "../../public/images/Airbnb.png";
+import Project2 from "../../public/images/Infowebsite.png";
+import Project3 from "../../public/images/randomquotesgenerator.png";
+import Project4 from "../../public/images/Steer X.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "../components/TransitionEffect";
 
@@ -168,47 +170,56 @@ function page() {
           lg:gap-x-8 md:gap-y-24 sm:gap-x-0"
           >
             <div className="col-span-12 ">
+
+                <div className="col-span-12 ">
               <FeaturedProject
-                title="React Portfolio Website"
+                title="Real-Time Messenger Clone"
                 img={FeaturedProject1}
-                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth 
-                page transitions, cool background effects, unique design and it is mobile responsive.
-                ."
-                link="https://my-portfolio-nekiarie.vercel.app"
-                github="https://github.com/NEKiarie/MyPortfolio"
-                type="Featured Project"
-              />
-            </div>
-
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Real-Time Messenger Clone"
-                img={Project1}
-                link="https://real-time-messenger-clone-beta.vercel.app/"
-                github="https://github.com/NEKiarie/Real-Time-Messenger-Clone"
-                type="Featured Project"
-              />
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Full-Stack Airbnb Clone"
-                img={Project2}
-                link="https://full-stack-airbnb-clone-seven.vercel.app"
-                github="https://github.com/NEKiarie/Full-Stack-Airbnb-Clone"
-                type="Featured Project"
-              />
-            </div>
-
-            {/* <div className="col-span-12 ">
-              <FeaturedProject
-                title="Real-Time Messenger Clone"
-                img={FeaturedProject2}
                 summary="A Real-Time Messenger Clone App developed using NextJs 13, React, Tailwind, Prisma, MongoDb, NextAuth,and Pusher. Has a unique design and it is mobile responsive."
                 link="https://real-time-messenger-clone-beta.vercel.app/"
                 github="https://github.com/NEKiarie/Real-Time-Messenger-Clone"
                 type="Featured Project"
               />
-            </div> */}
+            </div>
+            
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Full-Stack Airbnb Clone"
+                img={Project1}
+                link="https://full-stack-airbnb-clone-seven.vercel.app"
+                github="https://github.com/NEKiarie/Full-Stack-Airbnb-Clone"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="Steer-X"
+                img={Project4}
+                link="https://steer-x.vercel.app/"
+                github="https://github.com/NEKiarie/Steer-X"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="BankInfoWebsite"
+                img={Project2}
+                link="https://abcbankproject.netlify.app/"
+                github="https://github.com/NEKiarie/BankInfoWebsite"
+                type="Featured Project"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title="RandomQuotesGeneratorApp"
+                img={Project3}
+                link="https://gameofthronesquotesgenerator.netlify.app/"
+                github="https://github.com/NEKiarie/Random_Quotes_Generator_App"
+                type="Featured Project"
+              />
+            </div>
+            
           </div>
         </Layout>
       </main>
