@@ -212,7 +212,7 @@ function page() {
             </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
-                title="RandomQuotesGeneratorApp"
+                title="QuotesGeneratorApp"
                 img={Project3}
                 link="https://gameofthronesquotesgenerator.netlify.app/"
                 github="https://github.com/NEKiarie/Random_Quotes_Generator_App"
